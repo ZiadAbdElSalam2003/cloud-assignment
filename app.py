@@ -12,7 +12,7 @@ text=[]
 for word in gensim.utils.simple_preprocess(content):
     if word not in english_stopwords:
         text.append(word) 
-file2 = open('C:\\Users\\gate\\OneDrive\\Desktop\\yes.txt',"w")
+file2 = open('C:\\Users\\gate\\OneDrive\\Desktop\\yes.txt',"w") #save the text to sure that no stopwords
 file2.write(" ".join(text))
 d=dict()
 for element in text:
@@ -20,4 +20,4 @@ for element in text:
         d[element]= d[element]+1
     else:
         d[element]=1
-print(d) 
+print(d)     
